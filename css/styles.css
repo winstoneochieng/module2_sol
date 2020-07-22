@@ -1,0 +1,131 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+ 
+* {
+    box-sizing: border-box; 
+}
+.container {
+    height: auto;
+    width: 100%;
+    
+}
+.row {
+    height: auto;
+    width: 90%;
+    padding-top: 40px;
+    margin:0 auto;
+    
+}
+ 
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+ 
+p {
+    height: auto;
+    padding: 15px;
+    overflow: hidden;
+}
+ 
+.main-text {
+    position: relative;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    border: 1px solid black;
+    overflow: hidden;
+   }
+   .main__text--1 {
+    background-color: grey;
+   }
+   .main__text--2 {
+    background-color: rgb(116, 122, 214);
+   }
+   .main__text--3 {
+    background-color: rgb(154, 223, 205);
+   }
+ 
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 0 auto auto;
+    font-weight: 600;
+    width: 28%;
+    text-align: center;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+ 
+.section__title--1 {
+    background-color: rgb(221, 123, 123);
+}
+.section__title--2 {
+    background-color: rgb(223, 77, 77);
+    color: white;
+}
+.section__title--3 {
+    background-color: rgb(224, 183, 94);
+}
+ 
+ /* Media queries*/
+ /*Base styles*/
+/* Laptop View*/
+@media (min-width: 992px) {
+    .row {
+        height: 100%;
+        width: 90%;
+        padding-top: 40px;
+        margin:0 auto;
+        
+    }
+ 
+}
+ 
+/* Tablet View */
+ @media (min-width: 768px) and (max-width: 991px){
+   
+   .main__text--3 {
+    clear: left;
+    margin-top: 15px;
+    width: 62%;
+    }
+    .main-text {
+        height: 170px;
+    }
+   h1 {
+       margin-right: 32%;
+   }
+   .row {
+       margin-left: 0%;
+       width: 150%;
+   }
+    
+    
+}
+ 
+/* Mobile view  */
+ @media (max-width: 767px){
+ 
+    .main-text {
+        margin-top: 15px;
+        width: 80%;
+        height: 170px;
+        clear: left;
+    }
+    h1 {
+        margin-right: 11%;
+    }
+    .row {
+        margin-right: 2%;
+        width: 120%;
+    }
+    
+} 
